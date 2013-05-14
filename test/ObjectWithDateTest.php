@@ -5,6 +5,11 @@ class ObjectWithDateTest extends PHPUnit_Framework_TestCase {
         $object = new ObjectWithDate();
         $this->assertEquals(time(), $object->creationDate);
     }
+
+    public function testKnowsWhenItWasCreated2() {
+        $object = new ObjectWithDate();
+        print_r($object->creationDate);
+    }
 }
 
 class ObjectWithDate {
